@@ -1,0 +1,11 @@
+*/.idea
+*/.vscode
+
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ibrary/
+[Ll]ogs/
+[Uu]serData/
+[Ii]mportSettings.asset
+[Uu]serSettings/
