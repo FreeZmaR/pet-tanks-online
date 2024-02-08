@@ -75,7 +75,6 @@
     <Compile Include="Assets/Resources/DOTween/Modules/DOTweenModuleUtils.cs" />
     <Compile Include="Assets/Resources/DOTween/Modules/DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets/Resources/DOTween/Modules/DOTweenModuleAudio.cs" />
-    <Compile Include="Assets/Scripts/MenuPanel/Button.cs" />
     <Compile Include="Assets/Resources/DOTween/Modules/DOTweenModuleSprite.cs" />
   </ItemGroup>
   <ItemGroup>
