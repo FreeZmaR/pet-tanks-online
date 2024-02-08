@@ -21,6 +21,7 @@ public class VolumeRate : MonoBehaviour
     [SerializeField] private Image _currentImage;
     private const int MaxRate = 100;
     private const int MinRate = 0;
+    private const int DefaultRate = 35;
     private bool isActive;
     private int oldRate;
 
@@ -29,45 +30,19 @@ public class VolumeRate : MonoBehaviour
     {
         _slider.maxValue = MaxRate;
         _slider.minValue = MinRate;
+        _rate = DefaultRate;
+        
+        ChangeSliderValue();
     }
 
     public void OnIncrease()
     {
-        if (!isActive)
-        {
-            SetActive();
-        }
-
-        if (_rate >= MaxRate && isActive)
-        {
-            return;
-        }
-
-        _rate++;
-       
-        ChangeSliderValue();
+        _slider.value += 1;
     }
 
     public void OnDecrease()
     {
-        switch (_rate)
-        {
-            case 0:
-                return;
-            case > MinRate + 1:
-                _rate = MinRate;
-                
-                SetInactive();
-                ChangeSliderValue();
-
-                return;
-            default:
-                _rate--;
-               
-                ChangeSliderValue();
-
-                break;
-        }
+        _slider.value -= 1;
     }
 
     public void OnActive()
